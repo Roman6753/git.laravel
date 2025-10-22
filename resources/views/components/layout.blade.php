@@ -12,7 +12,7 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="{{ route('home') }}" class="text-xl font-bold text-blue-600">Logo</a>
             <nav class="hidden md:flex space-x-6">
-                <p>Menu</p>
+                <a href="">dashboard</a>
             </nav>
             <ul class="flex space-x-4">
 
@@ -47,7 +47,7 @@
     </main>
 
     <footer class="bg-gray-100 mt-12 py-6 text-center text-sm text-gray-500">
-        &copy; {{ date('Y') }} Все права защищены.
+       footer
     </footer>
 </body>
 </html>
