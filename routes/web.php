@@ -3,7 +3,7 @@
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/','home')->name('home');
+Route::view('/','home')->name('home');
 
 
 Route::get('/register', [UserController::class, 'register'])->name('register');

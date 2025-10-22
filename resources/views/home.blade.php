@@ -8,6 +8,6 @@
     <script src="{{ asset('tailwindcss.js') }}"></script>
 </head>
 <body>
-     <h1 class="text-blue">Home</h1>
+     <h1 class="text-blue-400">Home</h1>
 </body>
 </html>
