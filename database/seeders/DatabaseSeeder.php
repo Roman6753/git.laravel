@@ -18,13 +18,14 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
+            'is_admin' => true,
             'login' => 'Admin',
-            'fio' => 'Admin User',
-            'tel' => '+78577487584',
-            'email' => 'admin@example.com',
-            'password' => 1111,
+            'fio' => fake()->realText(20),
+            'tel' => fake()->phoneNumber(),
+            'email' => fake()->unique()->safeEmail(),
+            'password' => 'KorokNet',
         ]);
 
-        User::factory(5)->create();
+        User::factory(10)->create();
     }
 }
