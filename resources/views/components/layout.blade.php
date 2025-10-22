@@ -18,12 +18,12 @@
 
                 @guest
                     <li>
-                        <a href="{{ route('register') }}" class="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 transition">
+                        <a href="{{ route('register') }}" class="px-4 py-2 rounded">
                             Register
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('login') }}" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                        <a href="{{ route('login') }}" class="px-4 py-2 rounded">
                             Login
                         </a>
                     </li>
@@ -32,7 +32,7 @@
                     <li>
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+                            <button type="submit" class="px-4 py-2 rounded">
                             Exit
                             </button>
                         </form>
